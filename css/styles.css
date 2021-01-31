@@ -1,0 +1,126 @@
+* {
+  font-family: 'Raleway', sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  color: var(--main-text-color);
+  background-color: var(--main-bg-color);
+}
+
+:root {
+  --main-bg-color: #f4f3ee;
+  --secondary-bg-color: #bcb8b1;
+  --main-accent-color: #e0afa0;
+  --main-text-color: #463f3a;
+  --secondary-text-color: #8a817c;
+}
+
+html {
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 768px;
+}
+
+header {
+  display: flex;
+  flex-flow: column;
+}
+
+header p:last-child {
+  color: var(--secondary-text-color);
+  margin: auto;
+  border-bottom: 3px solid var(--main-text-color);
+  margin-bottom: 2px;
+}
+
+.main-form, footer, header p {
+  width: 90%;
+}
+
+.main-form {
+  border-top: 1px solid var(--main-text-color);
+  margin: auto;
+}
+
+h1 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 22px;
+  background-color: var(--main-text-color);
+  color: var(--main-bg-color);
+  padding-top: 1em;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.subtitle {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+h1, p {
+  text-align: center;
+  padding-bottom: 0.8em;
+}
+
+legend {
+  font-size: 20px;
+  font-weight: 600;
+  flex: 0 50px;
+}
+
+input, select, textarea {
+  border: none;
+  border-radius: 3px;
+  background-color: var(--secondary-bg-color);
+}
+
+input:focus, select:focus, textarea:focus {
+  border: 2px solid var(--secondary-text-color);
+}
+
+input[type="submit"] {
+  background-color: var(--main-accent-color);
+  color: var(--main-bg-color)
+}
+
+input::placeholder {
+  color: var(--main-text-color);
+  text-align: right;
+  font-size: 0.9em;
+  font-style: italic;
+  font-weight: 100;
+  padding-right: 0.3em;
+}
+
+fieldset {
+  display: flex;
+  flex-flow: column;
+  border: none;
+  width: 100%;
+  padding: 1em 0;
+}
+
+.contact-info {
+  height: 200vh;
+}
+
+.contact-info * {
+  height: 3em;
+}
+
+.flex-pair {
+  flex: 1 200px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.flex-pair label {
+  flex: 0;
+  margin-bottom: 0.3em;
+}
