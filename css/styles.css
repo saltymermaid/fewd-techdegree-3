@@ -33,7 +33,7 @@ header {
 header p:last-child {
   color: var(--secondary-text-color);
   margin: auto;
-  border-bottom: 3px solid var(--main-text-color);
+  border-bottom: 4px solid var(--main-text-color);
   margin-bottom: 2px;
 }
 
@@ -42,8 +42,11 @@ header p:last-child {
 }
 
 .main-form {
-  border-top: 1px solid var(--main-text-color);
   margin: auto;
+}
+
+.contact-info, .newsletter-selection {
+  border-top: 2px solid var(--main-text-color);
 }
 
 h1 {
@@ -65,12 +68,6 @@ h1 {
 h1, p {
   text-align: center;
   padding-bottom: 0.8em;
-}
-
-legend {
-  font-size: 20px;
-  font-weight: 600;
-  flex: 0 50px;
 }
 
 input, select, textarea {
@@ -95,6 +92,10 @@ input::placeholder {
   font-style: italic;
   font-weight: 100;
   padding-right: 0.3em;
+}
+
+#zip {
+  width: 50%;
 }
 
 fieldset {
