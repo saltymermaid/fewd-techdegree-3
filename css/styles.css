@@ -37,6 +37,10 @@ header p:last-child {
   margin-bottom: 2px;
 }
 
+hr {
+  border-bottom: 1px solid var(--main-text-color);
+}
+
 .main-form, footer, header p {
   width: 90%;
 }
@@ -44,10 +48,6 @@ header p:last-child {
 .main-form {
   margin: auto;
   height: 1150px;
-}
-
-.contact-info, .newsletter-selection {
-  border-top: 2px solid var(--main-text-color);
 }
 
 h1 {
@@ -69,6 +69,12 @@ h1 {
 h1, p {
   text-align: center;
   padding-bottom: 0.8em;
+}
+
+legend {
+  font-size: 24px;
+  font-weight: 800;
+  padding-top: 0.7em;
 }
 
 input, select, textarea {
