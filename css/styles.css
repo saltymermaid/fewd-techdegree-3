@@ -43,6 +43,7 @@ header p:last-child {
 
 .main-form {
   margin: auto;
+  height: 1150px;
 }
 
 .contact-info, .newsletter-selection {
@@ -56,13 +57,13 @@ h1 {
   color: var(--main-bg-color);
   padding-top: 1em;
   text-transform: uppercase;
-  text-align: center;
   margin-bottom: 1em;
 }
 
 .subtitle {
   font-size: 24px;
   font-weight: 600;
+  margin: auto;
 }
 
 h1, p {
@@ -80,9 +81,16 @@ input:focus, select:focus, textarea:focus {
   border: 2px solid var(--secondary-text-color);
 }
 
-input[type="submit"] {
+#sign-up-button {
   background-color: var(--main-accent-color);
-  color: var(--main-bg-color)
+  color: var(--main-bg-color);
+  flex: 0 30px;
+  display: flex;
+  width: 100%;
+  height: 3em;
+  font-weight: 600;
+  font-size: 18px;
+  justify-content: center;
 }
 
 input::placeholder {
@@ -107,7 +115,7 @@ fieldset {
 }
 
 .contact-info {
-  height: 200vh;
+  height: 700px;
 }
 
 .contact-info * {
@@ -123,5 +131,43 @@ fieldset {
 
 .flex-pair label {
   flex: 0;
+}
+
+.newsletter-selection {
+  height: 500px;
+}
+
+.newsletter-selection label {
+  flex: 1 30px;
+}
+
+.flex-newsletter-select {
+  flex: 1 200px;
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-newsletter-options {
+  flex: 1 45px;
+  display: flex;
+}
+
+.flex-newsletter-options label {
+  padding-left: 0.4em;
+}
+
+.flex-newsletter-other {
+  flex: 1 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
   margin-bottom: 0.3em;
+}
+
+footer p {
+  text-align: center;
+  color: var(--secondary-text-color);
+  font-style: italic;
 }

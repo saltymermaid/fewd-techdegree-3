@@ -104,26 +104,42 @@
       </fieldset>
       <fieldset class="newsletter-selection">
         <h2>Newsletter</h2>
-        <label>Select the newsletters you would like to receive</label>
-        <input type="checkbox" name="news" id="html-news">
-        <label for="html-news">HTML News</label>
-        <input type="checkbox" name="news" id="css-news">
-        <label for="css-news">CSS News</label>
-        <input type="checkbox" name="news" id="javascript-news">
-        <label for="javascript-news">Javascript News</label>
-        <label>Newsletter format</label>
-        <input type="radio" name="format" id="html-format">
-        <label for="html-format">HTML</label>
-        <input type="radio" name="format" id="plain-format">
-        <label for="plain-format">Plain text</label>
-        <label for="topics">Other topics you'd like to hear about</label>
-        <textarea name="topics" id="topics" rows="6"></textarea>
+        <div class="flex-newsletter-select">
+          <label>Select the newsletters you would like to receive</label>
+          <div class="flex-newsletter-options">
+            <input type="checkbox" name="news" id="html-news">
+            <label for="html-news">HTML News</label>
+          </div>
+          <div class="flex-newsletter-options">
+            <input type="checkbox" name="news" id="css-news">
+            <label for="css-news">CSS News</label>
+          </div>
+          <div class="flex-newsletter-options">
+            <input type="checkbox" name="news" id="javascript-news">
+            <label for="javascript-news">Javascript News</label>
+          </div>
+        </div>
+        <div class="flex-newsletter-select">
+          <label>Newsletter format</label>
+          <div class="flex-newsletter-options">
+            <input type="radio" name="format" id="html-format">
+            <label for="html-format">HTML</label>
+          </div>
+          <div class="flex-newsletter-options">
+            <input type="radio" name="format" id="plain-format">
+            <label for="plain-format">Plain text</label>
+          </div>
+          <div class="flex-newsletter-other">
+            <label for="topics">Other topics you'd like to hear about</label>
+            <textarea name="topics" id="topics" rows="6"></textarea>
+          </div>
+        </div>
       </fieldset>
-      <input type="submit" value="Sign Up">
+      <input type="submit" value="Sign Up" id="sign-up-button">
     </div>
   </form>
 </body>
 <footer>
-  Copyright The Code Review
+  <p>Copyright The Code Review</p>
 </footer>
 </html>
