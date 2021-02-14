@@ -21,6 +21,7 @@ fieldset,
 #sign-up-button {
   flex: 0 30px;
   justify-content: center;
+  align-items: center;
 }
 
 /* contact info label/field pairs */
@@ -34,13 +35,14 @@ fieldset,
 
 .flex-newsletter-options {
   flex: 1 40px;
+  align-items: center;
 }
 
 .flex-newsletter-other {
   flex: 1 30px;
 }
 
-.main-form {
+form {
   flex: 1 1150px;
 }
 
