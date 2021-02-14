@@ -14,20 +14,10 @@
   --secondary-text-color: #8a817c;
 }
 
-html {
-  display: flex;
-  flex-direction: column;
-}
-
 body {
   width: 100%;
   margin: 0 auto;
   max-width: 768px;
-}
-
-header {
-  display: flex;
-  flex-flow: column;
 }
 
 header p:last-child {
@@ -47,7 +37,6 @@ hr {
 
 .main-form {
   margin: auto;
-  height: 1150px;
 }
 
 h1 {
@@ -90,13 +79,10 @@ input:focus, select:focus, textarea:focus {
 #sign-up-button {
   background-color: var(--main-accent-color);
   color: var(--main-bg-color);
-  flex: 0 30px;
-  display: flex;
   width: 100%;
   height: 3em;
   font-weight: 600;
   font-size: 18px;
-  justify-content: center;
 }
 
 input::placeholder {
@@ -109,63 +95,21 @@ input::placeholder {
 }
 
 #zip {
-  width: 50%;
+  width: 144px;
 }
 
 fieldset {
-  display: flex;
-  flex-flow: column;
   border: none;
   width: 100%;
   padding: 1em 0;
-}
-
-.contact-info {
-  height: 700px;
 }
 
 .contact-info * {
   height: 3em;
 }
 
-.flex-pair {
-  flex: 1 200px;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.flex-pair label {
-  flex: 0;
-}
-
-.newsletter-selection {
-  height: 500px;
-}
-
-.newsletter-selection label {
-  flex: 1 30px;
-}
-
-.flex-newsletter-select {
-  flex: 1 200px;
-  display: flex;
-  flex-direction: column;
-}
-
-.flex-newsletter-options {
-  flex: 1 45px;
-  display: flex;
-}
-
 .flex-newsletter-options label {
   padding-left: 0.4em;
-}
-
-.flex-newsletter-other {
-  flex: 1 30px;
-  display: flex;
-  flex-direction: column;
 }
 
 label {
@@ -176,4 +120,16 @@ footer p {
   text-align: center;
   color: var(--secondary-text-color);
   font-style: italic;
+}
+
+.newsletter-selection label {
+  padding-bottom: 4px;
+}
+
+.flex-newsletter-select {
+  margin-left: 7px;
+}
+
+#copyright {
+  padding: 15px 0;
 }

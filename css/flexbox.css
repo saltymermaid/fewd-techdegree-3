@@ -1,0 +1,58 @@
+html,
+header,
+fieldset,
+#sign-up-button,
+.flex-pair,
+.flex-newsletter-select,
+.flex-newsletter-options,
+.flex-newsletter-other {
+  display: flex;
+}
+
+html,
+header,
+fieldset,
+.flex-pair,
+.flex-newsletter-select,
+.flex-newsletter-other {
+  flex-direction: column;
+}
+
+#sign-up-button {
+  flex: 0 30px;
+  justify-content: center;
+}
+
+/* contact info label/field pairs */
+.flex-pair {
+  flex: 1 80px;
+}
+
+.flex-newsletter-select {
+  flex: 1;
+}
+
+.flex-newsletter-options {
+  flex: 1 40px;
+}
+
+.flex-newsletter-other {
+  flex: 1 30px;
+}
+
+.main-form {
+  flex: 1 1150px;
+}
+
+.contact-info {
+  flex: 1;
+  justify-content: flex-start;
+}
+
+.flex-pair label {
+  flex: 0;
+}
+
+.newsletter-selection {
+  flex: 1 500px;
+}

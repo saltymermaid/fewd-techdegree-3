@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/flexbox.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&family=Raleway:ital,wght@0,400;0,600;1,100;1,200&display=swap" rel="stylesheet">
   <title>The Code Review | Newsletter Sign Up</title>
@@ -131,10 +132,10 @@
             <input type="radio" name="format" id="plain-format">
             <label for="plain-format">Plain text</label>
           </div>
-          <div class="flex-newsletter-other">
-            <label for="topics">Other topics you'd like to hear about</label>
-            <textarea name="topics" id="topics" rows="6"></textarea>
-          </div>
+        </div>
+        <div class="flex-newsletter-other">
+          <label for="topics">Other topics you'd like to hear about</label>
+          <textarea name="topics" id="topics" rows="6"></textarea>
         </div>
       </fieldset>
       <input type="submit" value="Sign Up" id="sign-up-button">
@@ -142,6 +143,6 @@
   </form>
 </body>
 <footer>
-  <p>Copyright The Code Review</p>
+  <p id="copyright">Copyright The Code Review</p>
 </footer>
 </html>
