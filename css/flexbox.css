@@ -56,3 +56,21 @@ fieldset,
 .newsletter-selection {
   flex: 1 500px;
 }
+
+@media screen and (min-width: 768px) {
+  .flex-pair {
+    flex-direction: row;
+    flex: 1 65px;
+    justify-content: stretch;
+  }
+
+  .flex-pair label {
+    flex: 0 144px;
+    display: flex;
+    align-items: center;
+  }
+
+  .flex-pair input:not(#zip), .flex-pair select {
+    flex: 1;
+  }
+}
